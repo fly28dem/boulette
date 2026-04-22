@@ -1,7 +1,7 @@
 /* Шрифты */
 @font-face {
     font-family: 'FindSansProBold';
-    src: url('/fonts/FindSansProBold.ttf');
+    src: url('../fonts/FindSansProBold.ttf');
     font-weight: normal;
     font-style: normal;
 }
@@ -20,7 +20,7 @@
 
 body {
     background-color: #030B18;
-    background-image: url(/images/background.jpg);
+    /* background-image: url(/images/background.jpg); */
     background-position: top center;
     background-size: 90%;
     font-family: 'FindSansProBold';
@@ -113,4 +113,16 @@ header {
 
 .landingImage li {
     font-size: 24px;
+}
+
+/* Рецепты */
+
+.recipes img {
+    border-radius: 3px;
+    box-shadow: 0px 0px 10px 1px rgb(11, 16, 55);
+}
+
+.recipes img:hover {
+    transform: scale(120%);
+    transition: 0.2s;
 }
