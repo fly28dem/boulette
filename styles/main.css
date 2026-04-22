@@ -1,0 +1,93 @@
+/* Шрифты */
+@font-face {
+    font-family: 'FindSansProBold';
+    src: url('/fonts/FindSansProBold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Сброс и общие стили */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #eeeeee;
+    text-decoration: none;
+    list-style-type: none;
+    transition: 0.1s;
+}
+
+li {
+    border: 1px dashed green;
+}
+
+body {
+    background-color: #030B18;
+    background-image: url(/images/background.jpg);
+    background-position: top center;
+    background-size: 90%;
+    font-family: 'FindSansProBold';
+}
+
+.container {
+    width: 1920px;
+    margin: auto;
+}
+
+/* Шапка и навигация */
+
+header {
+    width: 100%;
+    padding: 7px;
+}
+
+.navigationList {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+.navigationList li {
+    display: grid;
+    align-items: center;
+}
+
+.logo {
+    font-size: 48px;
+}
+
+.navigationInnerList {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-around;
+}
+
+.navigationInnerList li a{
+    font-size: 30px;
+    color: #314ca1;
+}
+
+.navigationInnerList li a:hover {
+    color: #1436a7;
+    cursor: pointer;
+}
+
+.loginList a{
+    display: grid;
+    grid-auto-flow: column;
+    gap: 20px;
+}
+
+.loginList a:hover {
+    filter: brightness(90%);
+    cursor: pointer;
+}
+
+.loginList li {
+    font-size: 36px;
+    color: gainsboro;
+}
+
+.logo, .loginList {
+    justify-self: center;
+}
