@@ -18,10 +18,6 @@
     transition: 0.1s;
 }
 
-li {
-    border: 1px dashed green;
-}
-
 body {
     background-color: #030B18;
     background-image: url(/images/background.jpg);
@@ -90,4 +86,31 @@ header {
 
 .logo, .loginList {
     justify-self: center;
+}
+
+/* Лендинг */
+
+.landing {
+    margin-top: 245px;
+    margin-left: 115px;
+}
+
+.landing h1 {
+    font-size: 94px;
+    text-transform: uppercase;
+}
+
+.landing li::before {
+    content: '— ';
+    /* border: 1px dashed green; */
+}
+
+.landingImage {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+}
+
+.landingImage li {
+    font-size: 24px;
 }
