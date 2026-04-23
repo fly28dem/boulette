@@ -100,7 +100,7 @@ header {
     text-transform: uppercase;
 }
 
-.landing li::before {
+.landingImage li::before {
     content: '— ';
     /* border: 1px dashed green; */
 }
@@ -115,14 +115,83 @@ header {
     font-size: 24px;
 }
 
-/* Рецепты */
+/* Список рецептов */
 
-.recipes img {
-    border-radius: 3px;
-    box-shadow: 0px 0px 10px 1px rgb(11, 16, 55);
+.recipes__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 20px;
+    border-radius: 20px;
+    background: #030a17;
+    background: radial-gradient(circle,rgba(3, 10, 23, 0.8) 60%, rgba(97, 97, 117, 0.2) 100%);
 }
 
-.recipes img:hover {
-    transform: scale(120%);
-    transition: 0.2s;
+/* Рецепт-элемент */
+
+.recipes__list li {
+    width: 440px;
+    height: 177px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* border: 1px solid green; */
+    padding: 8px;
+    transition: 0.5s;
+}
+
+.recipes__list li:hover {
+    background: rgba(50, 51, 72, 0.5);
+    background: radial-gradient(circle,rgba(50, 51, 72, 0.6) 0%, rgba(33, 34, 61, 0.3) 100%);
+    border-radius: 12px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.recipes__list img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    object-fit: cover;
+    filter: brightness(90%) contrast(110%);
+}
+
+.recipe__textContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 0 16px;
+}
+
+.recipe__title {
+    font-size: 20px;
+}
+
+.recipe__description {
+    margin-top: 12px;
+    font-size: 14px;
+    color: rgb(204, 204, 204);
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.recipe__timeCooking {
+    position: absolute;
+    right: 0px;
+    bottom: 3px;
+    padding: 8px 8px;
+    border-radius: 12px;
+    background-color: rgb(23, 24, 42);
+}
+
+.recipe__country {
+    position: absolute;
+    left: 9px;
+    bottom: 3px;
+    padding: 8px 8px;
+    background-color: rgba(23, 24, 42, 0.5);
+    border-radius: 12px;
+    color: rgb(228, 228, 228);
+}
+
+.recipes__list img {
+    border-radius: 24px;
 }
