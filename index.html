@@ -6,46 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>boulette</title>
     <link rel="stylesheet" href="./styles/main.css">
+    <link rel="icon" href="./images/favicon.png">
 </head>
 
 <body>
-    <div class="container">
+    <div class="fullhd__container">
+        
         <!-- Шапка -->
-        <header>
-            <nav>
-                <ul class="navigationList">
-                    <li><a href="index.html" class="logo">boulette</a></li>
-                    <li>
-                        <ul class="navigationInnerList">
-                            <li><a href="./index.html">главная</a></li>
-                            <li><a href="./recipes.html">рецепты</a></li>
-                            <li><a href="./index.html">журнал</a></li>
-                            <li><a href="./index.html">редактор</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <ul class="loginList">
-                            <a href="#">
-                                <li><img src="./images/loginIcon.png" alt="log" /></li>
-                                <li>логин</li>
-                            </a>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
+        <header class="header__container">
+            <!-- 1600px контейнер -->
+            <div class="main__container">
+                <nav class="header__navigation">
 
-
+                    <!-- Лого -->
+                    <div><a href="index.html" class="logo">boulette</a></div>
+                    <!-- Список страниц -->
+                    <ul class="navigation__list">
+                        <li><a href="./index.html">главная</a></li>
+                        <li><a href="./recipes.html">рецепты</a></li>
+                        <li><a href="./index.html">журнал</a></li>
+                        <li><a href="./index.html">редактор</a></li>
+                    </ul>
+                    <!-- Авторизация -->
+                    <div class="login__container">
+                        <a href="#">
+                            <img src="./images/loginIcon.png" alt="log" />
+                            <span class="login__text">логин</span>
+                        </a>
+                    </div>
+                </nav>
+            </div>
         </header>
+
         <!-- Лендинг -->
-        <main class="landing">
+        <main class="main__container landing__container">
             <h1>Изысканные блюда</h1>
-            <div class="landingImage">
+            <div class="landing__main">
                 <img src="./images/landingImage.png" alt="">
-                <ul>
-                    <li>Более 200 видов фруктовых нарезок, 400 рыбных, <br/>500 мясных и более 700 рецептов коктейлей! <br/> могло бы быть</li>
-                    <li>1 клиентов по всей России.</li>
+                <ul class="landing__list">
+                    <li>Более 200 видов фруктовых нарезок, 400 рыбных, 500 мясных и более 700 рецептов коктейлей! (могло бы быть)</li>
+                    <li>1 клиентов по всей России и в мире.</li>
                     <li>79 авторских рецептов (обещаем)</li>
-                    <li>Премия «Лучшая логистическая сеть 2021», <br />если не ошибаемся</li>
+                    <li>Премия «Лучшая логистическая сеть 2021», если не ошибаемся</li>
                 </ul>
             </div>
         </main>

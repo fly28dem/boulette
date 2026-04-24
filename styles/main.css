@@ -1,12 +1,10 @@
-/* Шрифты */
+/* ----- Сброс, шрифты и общие стили ----- */
 @font-face {
     font-family: 'FindSansProBold';
     src: url('../fonts/FindSansProBold.ttf');
     font-weight: normal;
     font-style: normal;
 }
-
-/* Сброс и общие стили */
 
 * {
     box-sizing: border-box;
@@ -26,100 +24,107 @@ body {
     font-family: 'FindSansProBold';
 }
 
-.container {
-    width: 1920px;
+.fullhd__container {
+    width: 1900px;
     margin: auto;
+    border: 1px dashed rgba(151, 19, 10, 0.5);
 }
 
-/* Шапка и навигация */
+.main__container {
+    width: 1600px;
+    margin: auto;
+    border: 1px dashed rgba(2, 122, 2, 0.5);
+}
 
-header {
+/* ----- Шапка и навигация ----- */
+
+.header__container {
+    display: flex;
+    justify-content: center;
     width: 100%;
-    padding: 7px;
+    height: 80px;
+    border: 1px dashed rgba(3, 3, 236, 0.5);
 }
 
-.navigationList {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-}
-
-.navigationList li {
-    display: grid;
+.header__navigation {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
+/* Логотип */
+
 .logo {
-    font-size: 48px;
+    font-size: 36px;
 }
 
-.navigationInnerList {
-    display: grid;
-    grid-auto-flow: column;
-    justify-content: space-around;
+/* Ссылки на страницы */
+
+.navigation__list {
+    display: flex;
+    gap: 60px;
 }
 
-.navigationInnerList li a{
-    font-size: 30px;
+.navigation__list a{
+    font-size: 24px;
     color: #314ca1;
 }
 
-.navigationInnerList li a:hover {
+.navigation__list a:hover {
     color: #1436a7;
     cursor: pointer;
 }
 
-.loginList a{
-    display: grid;
-    grid-auto-flow: column;
-    gap: 20px;
+/* Блок с авторизацией */
+
+.login__container a {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    color: rgb(197, 197, 197);
 }
 
-.loginList a:hover {
+.login__container a:hover {
     filter: brightness(90%);
     cursor: pointer;
 }
 
-.loginList li {
-    font-size: 36px;
+.login__text {
+    font-size: 30px;
     color: gainsboro;
 }
 
-.logo, .loginList {
-    justify-self: center;
+/* ----- Лендинг ----- */
+
+.landing__container {
+    margin-top: 205px;
 }
 
-/* Лендинг */
-
-.landing {
-    margin-top: 245px;
-    margin-left: 115px;
-}
-
-.landing h1 {
+.landing__container h1 {
     font-size: 94px;
     text-transform: uppercase;
 }
 
-.landingImage li::before {
-    content: '— ';
-    /* border: 1px dashed green; */
-}
-
-.landingImage {
-    display: grid;
-    grid-auto-flow: column;
+.landing__main {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
+    gap: 20px;
 }
 
-.landingImage li {
+.landing__list  {
     font-size: 24px;
 }
 
-/* Список рецептов */
+.landing__list ::before {
+    content: '— ';
+}
+
+/* ----- Список рецептов (тест-демо) ----- (будет переработано) ----- */
 
 .recipes__list {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     padding: 20px;
     border-radius: 20px;
     background: #030a17;
@@ -135,15 +140,16 @@ header {
     grid-template-columns: 1fr 1fr;
     /* border: 1px solid green; */
     padding: 8px;
-    transition: 0.5s;
+    transition: 0.2s;
 }
 
 .recipes__list li:hover {
     background: rgba(50, 51, 72, 0.5);
     background: radial-gradient(circle,rgba(50, 51, 72, 0.6) 0%, rgba(33, 34, 61, 0.3) 100%);
     border-radius: 12px;
-    transition: 0.5s;
+    transition: 0.2s;
     cursor: pointer;
+    transform: scale(105%);
 }
 
 .recipes__list img {

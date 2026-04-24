@@ -6,38 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>boulette</title>
     <link rel="stylesheet" href="./styles/main.css">
+    <link rel="icon" href="./images/favicon.png">
 </head>
 
 <body>
-    <div class="container">
+    <div class="fullhd__container">
+        
         <!-- Шапка -->
-        <header>
-            <nav>
-                <ul class="navigationList">
-                    <li><a href="index.html" class="logo">boulette</a></li>
-                    <li>
-                        <ul class="navigationInnerList">
-                            <li><a href="./index.html">главная</a></li>
-                            <li><a href="./recipes.html">рецепты</a></li>
-                            <li><a href="./index.html">журнал</a></li>
-                            <li><a href="./index.html">редактор</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <ul class="loginList">
-                            <a href="#">
-                                <li><img src="./images/loginIcon.png" alt="log" /></li>
-                                <li>логин</li>
-                            </a>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
+        <header class="header__container">
+            <!-- 1600px контейнер -->
+            <div class="main__container">
+                <nav class="header__navigation">
 
-
+                    <!-- Лого -->
+                    <div><a href="index.html" class="logo">boulette</a></div>
+                    <!-- Список страниц -->
+                    <ul class="navigation__list">
+                        <li><a href="./index.html">главная</a></li>
+                        <li><a href="./recipes.html">рецепты</a></li>
+                        <li><a href="./index.html">журнал</a></li>
+                        <li><a href="./index.html">редактор</a></li>
+                    </ul>
+                    <!-- Авторизация -->
+                    <div class="login__container">
+                        <a href="#">
+                            <img src="./images/loginIcon.png" alt="log" />
+                            <span class="login__text">логин</span>
+                        </a>
+                    </div>
+                </nav>
+            </div>
         </header>
-        <!-- Рецепты -->
-        <main class="landing recipes">
+
+        <!-- Рецепты (тест-демо)-->
+        <main class="main__container landing__container recipes">
             <h1>Наши рецепты</h1>
             <ul class="recipes__list">
                 <li>
