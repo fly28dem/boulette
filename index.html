@@ -13,24 +13,24 @@
 
     <!-- Шапка -->
     <header class="header container">
-            <nav class="header__navigation">
-                <!-- Логотип -->
-                <div><a href="index.html" class="logotype">boulette</a></div>
-                <!-- Ссылки на страницы -->
-                <ul class="navigation__list">
-                    <li><a href="./index.html">главная</a></li>
-                    <li><a href="./recipes.html">рецепты</a></li>
-                    <li><a href="./index.html">журнал</a></li>
-                    <li><a href="./index.html">редактор</a></li>
-                </ul>
-                <!-- Авторизация -->
-                <div class="login__container">
-                    <a href="#">
-                        <img class="login__image" src="./images/loginIcon.png" alt="log" />
-                        <span class="login__text">войти</span>
-                    </a>
-                </div>
-            </nav>
+        <nav class="header__navigation">
+            <!-- Логотип -->
+            <div><a href="index.html" class="logotype">boulette</a></div>
+            <!-- Ссылки на страницы -->
+            <ul class="navigation__list">
+                <li><a href="./index.html">главная</a></li>
+                <li><a href="./recipes.html">рецепты</a></li>
+                <li><a href="#./journal.html">журнал</a></li>
+                <li><a href="#./editor.html">редактор</a></li>
+            </ul>
+            <!-- Авторизация -->
+            <div class="login__container">
+                <a href="#">
+                    <img class="login__image" src="./images/loginIcon.png" alt="log" />
+                    <span class="login__text">войти</span>
+                </a>
+            </div>
+        </nav>
         </div>
     </header>
 
@@ -39,139 +39,375 @@
         <section class="landing__header">
             <h1>Очень синий</h1>
             <h1>Сайт с рецептами</h1>
-            
+
         </section>
         <section class="landing__main">
             <img class="landing__image" src="./images/header__image.png" alt="landing main img">
-            <aside class="aside left-top">
-                <ul>
-                    <li><a href="">Закуски</a></li>
-                    <li><a href="">Первые блюда</a></li>
-                    <li><a href="">Вторые блюда</a></li>
-                    <li><a href="">Полдник</a></li>
-                    <li><a href="">Гарниры</a></li>
-                    <li><a href="">Десерты</a></li>
-                    <li><a href="">Напитки</a></li>
-                    
-                </ul>
-            </aside>
-            <aside class="aside left-bottom blue">
-                <ul>
-                    <li><a href="">Франция</a></li>
-                    <li><a href="">Россия</a></li>
-                    <li><a href="">Италия</a></li>
-                    <li><a href="">Беларусь</a></li>
-                    <li><a href="">Япония</a></li>
-                    <li><a href="">Корея</a></li>
-                    <li><a href="">Китай</a></li>
-                </ul>
-            </aside>
-            <aside class="aside right-top">
-                <ul>
-                    <li><a href="">Мясные блюда</a></li>
-                    <li><a href="">Рыбные блюда</a></li>
-                    <li><a href="">Овощные блюда</a></li>
-                    <li><a href="">Блюда из круп</a></li>
-                    <li><a href="">Молочные блюда</a></li>
-                </ul>
-            </aside>
-            <aside class="aside right-bottom blue">
-                <ul>
-                    <li><a href="">Закуски</a></li>
-                    <li><a href="">Первые блюда</a></li>
-                    <li><a href="">Вторые блюда</a></li>
-                    <li><a href="">Грарниры</a></li>
-                    <li><a href="">Десерты</a></li>
-                    <li><a href="">Напитки</a></li>
-                </ul>
-            </aside>
+            <ul class="landing__list left-top">
+                <li><a href="#">Закуски</a></li>
+                <li><a href="#">Первые блюда</a></li>
+                <li><a href="#">Вторые блюда</a></li>
+                <li><a href="#">Полдник</a></li>
+                <li><a href="#">Гарниры</a></li>
+                <li><a href="#">Десерты</a></li>
+                <li><a href="#">Напитки</a></li>
+
+            </ul>
+            <ul class="landing__list left-bottom blue">
+                <li><a href="#">Франция</a></li>
+                <li><a href="#">Россия</a></li>
+                <li><a href="#">Италия</a></li>
+                <li><a href="#">Беларусь</a></li>
+                <li><a href="#">Япония</a></li>
+                <li><a href="#">Корея</a></li>
+                <li><a href="#">Китай</a></li>
+            </ul>
+            <ul class="landing__list right-top">
+                <li><a href="#">Мясные блюда</a></li>
+                <li><a href="#">Рыбные блюда</a></li>
+                <li><a href="#">Овощные блюда</a></li>
+                <li><a href="#">Блюда из круп</a></li>
+                <li><a href="#">Молочные блюда</a></li>
+            </ul>
+            <ul class="landing__list right-bottom blue">
+                <li><a href="#">Закуски</a></li>
+                <li><a href="#">Первые блюда</a></li>
+                <li><a href="#">Вторые блюда</a></li>
+                <li><a href="#">Грарниры</a></li>
+                <li><a href="#">Десерты</a></li>
+                <li><a href="#">Напитки</a></li>
+            </ul>
         </section>
         <section class="landing__transition">
-            <h2>
+            <h2 class="transition__title">
                 boulette — в переводе с французского «пельмень»
             </h2>
-            <p>
-                французское слово, означающее небольшой шарик, комочек или фрикадельку, <br/> 
-                часто используемое в кулинарии для обозначения мясных, <br/> 
-                рыбных или овощных тефтелей. 
+            <p class="transition__text">
+                французское слово, означающее небольшой шарик, комочек или фрикадельку, <br />
+                часто используемое в кулинарии для обозначения мясных, <br />
+                рыбных или овощных тефтелей.
             </p>
         </section>
         <!-- Раздел с карточками -->
         <section class="landing__original-recipes">
-            <h2>Авторские блюда</h2>
-            <ul class="original-recipes__list">
-                <li class="original-recipes__item">
-                    <a>
-                        <div>
-                            <h3 class="item__title">Коктейль "Ягодный Блюз"</h3>
-                        </div>
-                        <div class="item__main-container">
-                            <img class="item__image" src="./images/coctaile_forcard.png" alt="Коктейль 'Ягодный Блюз'">
-                            <p class="item__description">
-                                Глубокий фиолетовый цвет, рожденный соком спелой шелковицы.
-                                Тягучий джазовый ритм в каждом глотке прохладного джина.
-                                Тонкий баланс лесной сладости и едва уловимой кислинки лимона.
-                                Этот коктейль — музыка, которую можно почувствовать на вкус.
-                            </p>
-                        </div>
-                        <div>
-                            <span class="item__additional-text left">60 минут</span>
-                            <span class="item__additional-text right">Напитки</span>
-                        </div>
-                    </a>
-                </li>
-                <li class="original-recipes__item">
-                    <a>
-                        <div>
-                            <h3 class="item__title">Салат "Aimant"</h3>
-                        </div>
-                        <div class="item__main-container">
-                            <img class="item__image" src="./images/aimane_forcard.png" alt="Коктейль 'Ягодный Блюз'">
-                            <p class="item__description">
-                                Салат "Aimant" оправдывает свое название — он притягивает взгляды своей свежестью и необычным декором. Лазурные цветы бораго придают ему изысканный вид и тонкий свежий аромат.
-                            </p>
-                        </div>
-                        <div>
-                            <span class="item__additional-text left">75 минут</span>
-                            <span class="item__additional-text right">Салаты</span>
-                        </div>
-                    </a>
-                </li>
-                <li class="original-recipes__item">
-                    <a>
-                        <div>
-                            <h3 class="item__title">Boulette "d'AvesnesAlt"</h3>
-                        </div>
-                        <div class="item__main-container">
-                            <img class="item__image" src="./images/bouletteavesnes_forcard.png" alt="Коктейль 'Ягодный Блюз'">
-                            <p class="item__description">
-                                Традиционный шедевр с севера Франции, узнаваемый по своей дерзкой конусообразной форме. Огненная корочка из паприки обладает мощным, острым характером и густым ароматом, который невозможно забыть.
-                            </p>
-                        </div>
-                        <div>
-                            <span class="item__additional-text left">60 минут</span>
-                            <span class="item__additional-text right">Напитки</span>
-                        </div>
-                    </a>
-                </li>
-                <li class="original-recipes__item">
-                    <a>
-                        <div>
-                            <h3 class="item__title">Грибы "Эноки Korea"</h3>
-                        </div>
-                        <div class="item__main-container">
-                            <img class="item__image" src="./images/mushroom_forcard.png" alt="Коктейль 'Ягодный Блюз'">
-                            <p class="item__description">
-                                Хрустящие грибы эноки в объятиях сочного бекона под глянцевой глазурью. Идеальный баланс пряного соуса и кунжута.. «Эноки Korea» — это маленькое гастрономическое приключение на вашей тарелке.
-                            </p>
-                        </div>
-                        <div>
-                            <span class="item__additional-text left">60 минут</span>
-                            <span class="item__additional-text right">Напитки</span>
-                        </div>
-                    </a>
-                </li>
-            </ul>
+            <h2 class="original-recipes__title">Авторские блюда</h2>
+            <!-- Слайдер -->
+            <div class="original-recipes__container">
+                <ul class="original-recipes__slider">
+                    <li class="original-recipes__item">
+                        <a>
+                            <div>
+                                <h3 class="item__title">Коктейль "Ягодный Блюз"</h3>
+                            </div>
+                            <div class="item__main-container">
+                                <img class="item__image" src="./images/coctaile_forcard.png" alt="Изображение рецепта">
+                                <p class="item__description">
+                                    Глубокий фиолетовый цвет, рожденный соком спелой шелковицы.
+                                    Тягучий джазовый ритм в каждом глотке прохладного джина.
+                                    Тонкий баланс лесной сладости и едва уловимой кислинки лимона.
+                                    Этот коктейль — музыка, которую можно почувствовать на вкус.
+                                </p>
+                            </div>
+                            <div>
+                                <span class="item__additional-text left">60 минут</span>
+                                <span class="item__additional-text right">Напитки</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="original-recipes__item">
+                        <a>
+                            <div>
+                                <h3 class="item__title">Салат "Aimant"</h3>
+                            </div>
+                            <div class="item__main-container">
+                                <img class="item__image" src="./images/aimane_forcard.png" alt="Изображение рецепта">
+                                <p class="item__description">
+                                    Салат "Aimant" оправдывает свое название — он притягивает взгляды своей свежестью и
+                                    необычным декором. Лазурные цветы бораго придают ему изысканный вид и тонкий свежий
+                                    аромат.
+                                </p>
+                            </div>
+                            <div>
+                                <span class="item__additional-text left">75 минут</span>
+                                <span class="item__additional-text right">Салаты</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="original-recipes__item">
+                        <a>
+                            <div>
+                                <h3 class="item__title">Boulette "d'AvesnesAlt"</h3>
+                            </div>
+                            <div class="item__main-container">
+                                <img class="item__image" src="./images/bouletteavesnes_forcard.png"
+                                    alt="Изображение рецепта">
+                                <p class="item__description">
+                                    Традиционный шедевр с севера Франции, узнаваемый по своей дерзкой конусообразной
+                                    форме. Огненная корочка из паприки обладает мощным, острым характером и густым
+                                    ароматом, который невозможно забыть.
+                                </p>
+                            </div>
+                            <div>
+                                <span class="item__additional-text left">60 минут</span>
+                                <span class="item__additional-text right">Напитки</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="original-recipes__item">
+                        <a>
+                            <div>
+                                <h3 class="item__title">Грибы "Эноки Korea"</h3>
+                            </div>
+                            <div class="item__main-container">
+                                <img class="item__image" src="./images/mushroom_forcard.png" alt="Изображение рецепта">
+                                <p class="item__description">
+                                    Хрустящие грибы эноки в объятиях сочного бекона под глянцевой глазурью. Идеальный
+                                    баланс пряного соуса и кунжута.. «Эноки Korea» — это маленькое гастрономическое
+                                    приключение на вашей тарелке.
+                                </p>
+                            </div>
+                            <div>
+                                <span class="item__additional-text left">60 минут</span>
+                                <span class="item__additional-text right">Напитки</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="original-recipes__item">
+                        <a>
+                            <div>
+                                <h3 class="item__title">Коктейль "Ягодный Блюз"</h3>
+                            </div>
+                            <div class="item__main-container">
+                                <img class="item__image" src="./images/coctaile_forcard.png" alt="Изображение рецепта">
+                                <p class="item__description">
+                                    Глубокий фиолетовый цвет, рожденный соком спелой шелковицы.
+                                    Тягучий джазовый ритм в каждом глотке прохладного джина.
+                                    Тонкий баланс лесной сладости и едва уловимой кислинки лимона.
+                                    Этот коктейль — музыка, которую можно почувствовать на вкус.
+                                </p>
+                            </div>
+                            <div>
+                                <span class="item__additional-text left">60 минут</span>
+                                <span class="item__additional-text right">Напитки</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="original-recipes__item">
+                        <a>
+                            <div>
+                                <h3 class="item__title">Салат "Aimant"</h3>
+                            </div>
+                            <div class="item__main-container">
+                                <img class="item__image" src="./images/aimane_forcard.png" alt="Изображение рецепта">
+                                <p class="item__description">
+                                    Салат "Aimant" оправдывает свое название — он притягивает взгляды своей свежестью и
+                                    необычным декором. Лазурные цветы бораго придают ему изысканный вид и тонкий свежий
+                                    аромат.
+                                </p>
+                            </div>
+                            <div>
+                                <span class="item__additional-text left">75 минут</span>
+                                <span class="item__additional-text right">Салаты</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="original-recipes__item">
+                        <a>
+                            <div>
+                                <h3 class="item__title">Boulette "d'AvesnesAlt"</h3>
+                            </div>
+                            <div class="item__main-container">
+                                <img class="item__image" src="./images/bouletteavesnes_forcard.png"
+                                    alt="Изображение рецепта">
+                                <p class="item__description">
+                                    Традиционный шедевр с севера Франции, узнаваемый по своей дерзкой конусообразной
+                                    форме. Огненная корочка из паприки обладает мощным, острым характером и густым
+                                    ароматом, который невозможно забыть.
+                                </p>
+                            </div>
+                            <div>
+                                <span class="item__additional-text left">60 минут</span>
+                                <span class="item__additional-text right">Напитки</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="original-recipes__item">
+                        <a>
+                            <div>
+                                <h3 class="item__title">Грибы "Эноки Korea"</h3>
+                            </div>
+                            <div class="item__main-container">
+                                <img class="item__image" src="./images/mushroom_forcard.png" alt="Изображение рецепта">
+                                <p class="item__description">
+                                    Хрустящие грибы эноки в объятиях сочного бекона под глянцевой глазурью. Идеальный
+                                    баланс пряного соуса и кунжута.. «Эноки Korea» — это маленькое гастрономическое
+                                    приключение на вашей тарелке.
+                                </p>
+                            </div>
+                            <div>
+                                <span class="item__additional-text left">60 минут</span>
+                                <span class="item__additional-text right">Напитки</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="original-recipes__item">
+                        <a>
+                            <div>
+                                <h3 class="item__title">Коктейль "Ягодный Блюз"</h3>
+                            </div>
+                            <div class="item__main-container">
+                                <img class="item__image" src="./images/coctaile_forcard.png" alt="Изображение рецепта">
+                                <p class="item__description">
+                                    Глубокий фиолетовый цвет, рожденный соком спелой шелковицы.
+                                    Тягучий джазовый ритм в каждом глотке прохладного джина.
+                                    Тонкий баланс лесной сладости и едва уловимой кислинки лимона.
+                                    Этот коктейль — музыка, которую можно почувствовать на вкус.
+                                </p>
+                            </div>
+                            <div>
+                                <span class="item__additional-text left">60 минут</span>
+                                <span class="item__additional-text right">Напитки</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="original-recipes__item">
+                        <a>
+                            <div>
+                                <h3 class="item__title">Салат "Aimant"</h3>
+                            </div>
+                            <div class="item__main-container">
+                                <img class="item__image" src="./images/aimane_forcard.png" alt="Изображение рецепта">
+                                <p class="item__description">
+                                    Салат "Aimant" оправдывает свое название — он притягивает взгляды своей свежестью и
+                                    необычным декором. Лазурные цветы бораго придают ему изысканный вид и тонкий свежий
+                                    аромат.
+                                </p>
+                            </div>
+                            <div>
+                                <span class="item__additional-text left">75 минут</span>
+                                <span class="item__additional-text right">Салаты</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="original-recipes__item">
+                        <a>
+                            <div>
+                                <h3 class="item__title">Boulette "d'AvesnesAlt"</h3>
+                            </div>
+                            <div class="item__main-container">
+                                <img class="item__image" src="./images/bouletteavesnes_forcard.png"
+                                    alt="Изображение рецепта">
+                                <p class="item__description">
+                                    Традиционный шедевр с севера Франции, узнаваемый по своей дерзкой конусообразной
+                                    форме. Огненная корочка из паприки обладает мощным, острым характером и густым
+                                    ароматом, который невозможно забыть.
+                                </p>
+                            </div>
+                            <div>
+                                <span class="item__additional-text left">60 минут</span>
+                                <span class="item__additional-text right">Напитки</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="original-recipes__item">
+                        <a>
+                            <div>
+                                <h3 class="item__title">Грибы "Эноки Korea"</h3>
+                            </div>
+                            <div class="item__main-container">
+                                <img class="item__image" src="./images/mushroom_forcard.png" alt="Изображение рецепта">
+                                <p class="item__description">
+                                    Хрустящие грибы эноки в объятиях сочного бекона под глянцевой глазурью. Идеальный
+                                    баланс пряного соуса и кунжута.. «Эноки Korea» — это маленькое гастрономическое
+                                    приключение на вашей тарелке.
+                                </p>
+                            </div>
+                            <div>
+                                <span class="item__additional-text left">60 минут</span>
+                                <span class="item__additional-text right">Напитки</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="original-recipes__item">
+                        <a>
+                            <div>
+                                <h3 class="item__title">Коктейль "Ягодный Блюз"</h3>
+                            </div>
+                            <div class="item__main-container">
+                                <img class="item__image" src="./images/coctaile_forcard.png" alt="Изображение рецепта">
+                                <p class="item__description">
+                                    Глубокий фиолетовый цвет, рожденный соком спелой шелковицы.
+                                    Тягучий джазовый ритм в каждом глотке прохладного джина.
+                                    Тонкий баланс лесной сладости и едва уловимой кислинки лимона.
+                                    Этот коктейль — музыка, которую можно почувствовать на вкус.
+                                </p>
+                            </div>
+                            <div>
+                                <span class="item__additional-text left">60 минут</span>
+                                <span class="item__additional-text right">Напитки</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="original-recipes__item">
+                        <a>
+                            <div>
+                                <h3 class="item__title">Салат "Aimant"</h3>
+                            </div>
+                            <div class="item__main-container">
+                                <img class="item__image" src="./images/aimane_forcard.png" alt="Изображение рецепта">
+                                <p class="item__description">
+                                    Салат "Aimant" оправдывает свое название — он притягивает взгляды своей свежестью и
+                                    необычным декором. Лазурные цветы бораго придают ему изысканный вид и тонкий свежий
+                                    аромат.
+                                </p>
+                            </div>
+                            <div>
+                                <span class="item__additional-text left">75 минут</span>
+                                <span class="item__additional-text right">Салаты</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="original-recipes__item">
+                        <a>
+                            <div>
+                                <h3 class="item__title">Boulette "d'AvesnesAlt"</h3>
+                            </div>
+                            <div class="item__main-container">
+                                <img class="item__image" src="./images/bouletteavesnes_forcard.png"
+                                    alt="Изображение рецепта">
+                                <p class="item__description">
+                                    Традиционный шедевр с севера Франции, узнаваемый по своей дерзкой конусообразной
+                                    форме. Огненная корочка из паприки обладает мощным, острым характером и густым
+                                    ароматом, который невозможно забыть.
+                                </p>
+                            </div>
+                            <div>
+                                <span class="item__additional-text left">60 минут</span>
+                                <span class="item__additional-text right">Напитки</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="original-recipes__item">
+                        <a>
+                            <div>
+                                <h3 class="item__title">Грибы "Эноки Korea"</h3>
+                            </div>
+                            <div class="item__main-container">
+                                <img class="item__image" src="./images/mushroom_forcard.png" alt="Изображение рецепта">
+                                <p class="item__description">
+                                    Хрустящие грибы эноки в объятиях сочного бекона под глянцевой глазурью. Идеальный
+                                    баланс пряного соуса и кунжута.. «Эноки Korea» — это маленькое гастрономическое
+                                    приключение на вашей тарелке.
+                                </p>
+                            </div>
+                            <div>
+                                <span class="item__additional-text left">60 минут</span>
+                                <span class="item__additional-text right">Напитки</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </section>
     </main>
     <!-- Подвал -->
@@ -184,32 +420,33 @@
         <div class="footer__main">
             <div class="footer__column">
                 <ul class="footer__mail-list">
-                    <li><a href="fly28dem@gmail.com">fly28dem@gmail.com</a></li>
-                    <li><a href="mainmail9999@gmail.com">mainmail9999@gmail.com</a></li>
-                    <li><a href="Coperiron@yandex.com">Coperiron@yandex.com</a></li>
+                    <li><a href="mailto:fly28dem@gmail.com">fly28dem@gmail.com</a></li>
+                    <li><a href="mailto:mainmail9999@gmail.com">mainmail9999@gmail.com</a></li>
+                    <li><a href="mailto:Coperiron@yandex.com">Coperiron@yandex.com</a></li>
                 </ul>
                 <ul class="footer__number-list">
-                    <li><a href="+7(999)235-67-79">+7(999)235-67-79</a></li>
-                    <li><a href="+7(991) 992-68-50">+7(991)992-68-50</a></li>
+                    <li><a href="tel:+7(999)235-67-79">+7(999)235-67-79</a></li>
+                    <li><a href="tel:+7(991) 992-68-50">+7(991)992-68-50</a></li>
                 </ul>
             </div>
             <div class="footer__column">
                 <nav>
                     <ul class="footer__navigation-list">
-                        <li><a href="">Главная</a></li>
-                        <li><a href="">Рецепты</a></li>
-                        <li><a href="">Журнал</a></li>
-                        <li><a href="">Профиль</a></li>
+                        <li><a href="./index.html">Главная</a></li>
+                        <li><a href="./recipes.html">Рецепты</a></li>
+                        <li><a href="#./journal.html">Журнал</a></li>
+                        <li><a href="#./account.html">Профиль</a></li>
                     </ul>
                 </nav>
                 <ul class="footer__social-media-list">
-                    <li><a href="">GitHub</a></li>
-                    <li><a href="">Telegram</a></li>
+                    <li><a href="https://github.com/fly28dem/boulette">GitHub</a></li>
+                    <li><a href="https://t.me/kanulvletu0">Telegram</a></li>
                 </ul>
             </div>
         </div>
     </footer>
 
+    <script src="./js/script.js"></script>
 </body>
 
 </html>

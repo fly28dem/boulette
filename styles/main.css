@@ -46,8 +46,19 @@ body {
     background-color: #030B18;
     background-image: url(../images/background.jpg);
     background-position: top center;
-    background-size: 90%;
-    
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+body::-webkit-scrollbar {
+    width: 11px;
+    background-color: #1a1e2b;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #09101C;
+    border-radius: 3px;
+    border: 2px solid #25304e;
 }
 
 .container {
@@ -67,7 +78,8 @@ body {
     top: 0;
     z-index: 1;
     font-family: 'FindSansProBold';
-    /* background-color: rgba(31, 36, 48, 0.33); */
+    border-radius: 0 0 8px 8px;
+    /* background-color: rgba(31, 36, 48, 0.3); */
     backdrop-filter: blur(15px);
 }
 
@@ -162,10 +174,14 @@ body {
 
 /* Боковые меню */
 
-.aside {
+.landing__list {
     position: absolute;
     font-size: 14pt;
     font-family: 'FindSansProLight';
+}
+
+.landing__list a:hover {
+    text-decoration: underline;
 }
 
 .left-top {
@@ -206,13 +222,13 @@ body {
     background-position: bottom;
 }
 
-.landing__transition h2 {
+.transition__title {
     font-size: 18pt;
     font-family: 'FindSansProLight';
     font-weight: lighter;
 }
 
-.landing__transition p {
+.transition__text {
     margin-top: 35px;
     text-align: center;
     font-size: 14pt;
@@ -229,8 +245,8 @@ body {
     /* border: 1px dashed blue; */
 }
 
-.landing__original-recipes h2 {
-    margin-bottom: 25px;
+.original-recipes__title {
+    margin-bottom: 10px;
     text-align: center;
     font-size: 18pt;
     font-family: 'FindSansProRegular';
@@ -238,27 +254,45 @@ body {
     color: #142861;
 }
 
-.landing__original-recipes ul {
+/* Настройка слайдера */
+
+.original-recipes__container {
+    height: 220px;
     display: flex;
-    justify-content: space-between;
+    overflow-y: visible;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    /* border: 1px dashed rgba(241, 241, 5, 0.3); */
+}
+
+.original-recipes__container::-webkit-scrollbar {
+    display: none;
+}
+
+.original-recipes__slider {
+    display: flex;
+    align-items: center;
+    /* border: 1px dashed rgba(212, 0, 219, 0.3); */
 }
 
 /* Элемент списка */
 
 .original-recipes__item {
+    margin: 0 5px;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 390px;
+    width: 388px;
     height: 200px;
-    
     border: 1px solid #142861;
     border-radius: 8px;
+    scroll-snap-align: start;
+    scroll-margin: 0 5px;
 }
 
 .original-recipes__item a {
-    width: 380px;
+    width: 378px;
     height: 190px;
     padding: 5px;
     background-color: rgba(12, 28, 72, 0.15);
@@ -274,7 +308,7 @@ body {
 .item__main-container {
     margin: 10px 5px;
     display: flex;
-    gap: 10px;
+    /* gap: 10px; */
     justify-content: space-between;
     align-items: center;
 }
@@ -313,14 +347,14 @@ body {
 .original-recipes__item:hover {
     z-index: 1;
     cursor: pointer;
-    backdrop-filter: blur(11px);
-    filter: brightness(110%);
-    transform: scale(115%);
-    transition: 0.3s;
+    backdrop-filter: blur(3px);
+    /* transform: scale(110%); */
+    border-color: #1436a7;
+    transition: 0.2s;
 }
 
 .original-recipes__item {
-    transition: 0.3s;
+    transition: 0.2s;
 }
 
 /* ----------------------------- */
@@ -328,7 +362,7 @@ body {
 /* ----------------------------- */
 
 .footer {
-    margin-top: 85px;
+    margin-top: 60px;
     border-radius: 8px;
     background-color: rgba(12, 28, 72, 0.2);
 }
