@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>boulette</title>
+    <title>boulette — база рецептов</title>
     <link rel="stylesheet" href="./styles/main.css">
     <link rel="icon" href="./images/favicon.png">
 </head>
@@ -34,7 +34,307 @@
         </div>
     </header>
 
-    </div>
+    <!-- Содержимое страницы с рецептами -->
+    <main class="recipes__container container">
+        <section>
+            <form class="recipes__form" action="">
+                <fieldset>
+                    <legend class="form__title">Открытая база рецептов</legend>
+                    <div class="form__sorting-container">
+                        <!-- Сортировка -->
+                        <label class="form__sorting-button" for="popular">
+                            Популярные
+                            <input type="radio" id="popular" name="recipes__sorting" value="popular">
+                        </label>
+                        <label class="form__sorting-button" for="news">
+                            Новинки
+                            <input type="radio" id="news" name="recipes__sorting" value="news">
+                        </label>
+                        <label class="form__sorting-button" for="random">
+                            Случайные
+                            <input type="radio" id="random" name="recipes__sorting" value="random">
+                        </label>
+
+                        <!-- Поисковая строка -->
+                        <input class="form__search-input" type="text" placeholder="Заячьи уши в духовке по-мексикански">
+                        <input class="form__search-button" type="button">
+                    </div>
+                    <div class="form__category-container">
+                        <!-- Категории -->
+                        <label class="form__category-button" for="meat">
+                            Мясо
+                            <input type="checkbox" id="meat" name="recipes__sorting" value="meat">
+                        </label>
+                        <label class="form__category-button" for="meat">
+                            Рыба    
+                            <input type="checkbox" id="meat" name="recipes__sorting" value="meat">
+                        </label>
+                        <label class="form__category-button" for="meat">
+                            Грибы
+                            <input type="checkbox" id="meat" name="recipes__sorting" value="meat">
+                        </label>
+                        <label class="form__category-button" for="meat">
+                            Овощи
+                            <input type="checkbox" id="meat" name="recipes__sorting" value="meat">
+                        </label>
+                        <label class="form__category-button" for="meat">
+                            Фрукты
+                            <input type="checkbox" id="meat" name="recipes__sorting" value="meat">
+                        </label>
+                        <label class="form__category-button" for="meat">
+                            Ягоды
+                            <input type="checkbox" id="meat" name="recipes__sorting" value="meat">
+                        </label>
+                        <label class="form__category-button" for="meat">
+                            Крупы
+                            <input type="checkbox" id="meat" name="recipes__sorting" value="meat">
+                        </label>
+                        <label class="form__category-button" for="meat">
+                            Молочное
+                            <input type="checkbox" id="meat" name="recipes__sorting" value="meat">
+                        </label>
+                        <label class="form__category-button" for="meat">
+                            Соусы
+                            <input type="checkbox" id="meat" name="recipes__sorting" value="meat">
+                        </label>
+                        <label class="form__category-button" for="meat">
+                            Мучное
+                            <input type="checkbox" id="meat" name="recipes__sorting" value="meat">
+                        </label>
+                        <label class="form__category-button" for="meat">
+                            Соки
+                            <input type="checkbox" id="meat" name="recipes__sorting" value="meat">
+                        </label>
+                        <label class="form__category-button" for="meat">
+                            Алкоголь
+                            <input type="checkbox" id="meat" name="recipes__sorting" value="meat">
+                        </label>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+        <section>
+            <!-- Длина списка рецептов -->
+            <span class="recipes__lenght">34 рецепта(-ов) было найдено по данному запросу:</span>
+            <!-- Список рецептов -->
+            <ul class="recipes__list">
+                <!-- Карточка рецепта -->
+                <li class="recipes__item">
+                    <a href="#">
+                        <h1 class="item__title">Ватиканские зефирные пряности закатного толка</h1>
+                        <img class="item__image" src="./images/vatican.jpg" alt="recipe image">
+                        <img class="tag__flag" src="./images/flags/vat.png" alt="flag icon">
+                        <div class="tag__time">
+                                <img src="./images/recipe__time.png" alt="time icon">
+                                <p class="time__text">60 мин</p>
+                        </div>
+                    </a>
+                </li>
+                <!-- Карточка рецепта -->
+                <li class="recipes__item">
+                    <a href="#">
+                        <h1 class="item__title">Дети котлет</h1>
+                        <div class="item__main">
+                            <img class="item__image" src="./images/images (1).jpg" alt="recipe image">
+                        </div>
+                        <img class="tag__flag" src="./images/flags/recipes__flag.png" alt="flag icon">
+                        <div class="tag__time">
+                                <img src="./images/recipe__time.png" alt="time icon">
+                                <p class="time__text">40 мин</p>
+                        </div>
+                    </a>
+                </li>
+                <!-- Карточка рецепта -->
+                <li class="recipes__item">
+                    <a href="#">
+                        <h1 class="item__title">Картошка с нейро-рыбой</h1>
+                        <div class="item__main">
+                            <img class="item__image" src="./images/Без названия (2).jpg" alt="recipe image">
+                        </div>
+                        <img class="tag__flag" src="./images/flags/ind.png" alt="flag icon">
+                        <div class="tag__time">
+                                <img src="./images/recipe__time.png" alt="time icon">
+                                <p class="time__text">40 мин</p>
+                        </div>
+                    </a>
+                </li>
+                <!-- Карточка рецепта -->
+                <li class="recipes__item">
+                    <a href="#">
+                        <h1 class="item__title">Лиса-овсянка</h1>
+                        <div class="item__main">
+                            <img class="item__image" src="./images/Без названия (1).jpg" alt="recipe image">
+                        </div>
+                        <img class="tag__flag" src="./images/flags/norv.png" alt="flag icon">
+                        <div class="tag__time">
+                                <img src="./images/recipe__time.png" alt="time icon">
+                                <p class="time__text">5 мин</p>
+                        </div>
+                    </a>
+                </li>
+                <!-- Карточка рецепта -->
+                <li class="recipes__item">
+                    <a href="#">
+                        <h1 class="item__title">Самса из чайки</h1>
+                        <div class="item__main">
+                            <img class="item__image" src="./images/Без названия (4).jpg" alt="recipe image">
+                        </div>
+                        <img class="tag__flag" src="./images/flags/bra.png" alt="flag icon">
+                        <div class="tag__time">
+                                <img src="./images/recipe__time.png" alt="time icon">
+                                <p class="time__text">70 мин</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="recipes__item">
+                    <a href="#">
+                        <h1 class="item__title">Греческий пирожок</h1>
+                        <div class="item__main">
+                            <img class="item__image" src="./images/Без названия (5).jpg" alt="recipe image">
+                        </div>
+                        <img class="tag__flag" src="./images/flags/gre.png" alt="flag icon">
+                        <div class="tag__time">
+                                <img src="./images/recipe__time.png" alt="time icon">
+                                <p class="time__text">45 мин</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="recipes__item">
+                    <a href="#">
+                        <h1 class="item__title">Рыба-капитан</h1>
+                        <div class="item__main">
+                            <img class="item__image" src="./images/images.jpg" alt="recipe image">
+                        </div>
+                        <img class="tag__flag" src="./images/flags/ru.png" alt="flag icon">
+                        <div class="tag__time">
+                                <img src="./images/recipe__time.png" alt="time icon">
+                                <p class="time__text">60 мин</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="recipes__item">
+                    <a href="#">
+                        <h1 class="item__title">Пицца на сковороде </h1>
+                        <div class="item__main">
+                            <img class="item__image" src="./images/Без названия (3).jpg" alt="recipe image">
+                        </div>
+                        <img class="tag__flag" src="./images/flags/ita.png" alt="flag icon">
+                        <div class="tag__time">
+                                <img src="./images/recipe__time.png" alt="time icon">
+                                <p class="time__text">105 мин</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="recipes__item">
+                    <a href="#">
+                        <h1 class="item__title">Армия пельменей</h1>
+                        <div class="item__main">
+                            <img class="item__image" src="./images/images (2).jpg" alt="recipe image">
+                        </div>
+                        <img class="tag__flag" src="./images/flags/ru.png" alt="flag icon">
+                        <div class="tag__time">
+                                <img src="./images/recipe__time.png" alt="time icon">
+                                <p class="time__text">180 мин</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="recipes__item">
+                    <a href="#">
+                        <h1 class="item__title">Салат "Два яйца"</h1>
+                        <div class="item__main">
+                            <img class="item__image" src="./images/images (3).jpg" alt="recipe image">
+                        </div>
+                        <img class="tag__flag" src="./images/flags/lit.png" alt="flag icon">
+                        <div class="tag__time">
+                                <img src="./images/recipe__time.png" alt="time icon">
+                                <p class="time__text">15 мин</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="recipes__item">
+                    <a href="#">
+                        <h1 class="item__title">Рыцарская похлебка</h1>
+                        <div class="item__main">
+                            <img class="item__image" src="./images/images (4).jpg" alt="recipe image">
+                        </div>
+                        <img class="tag__flag" src="./images/flags/shw.png" alt="flag icon">
+                        <div class="tag__time">
+                                <img src="./images/recipe__time.png" alt="time icon">
+                                <p class="time__text">20 мин</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="recipes__item">
+                    <a href="#">
+                        <h1 class="item__title">Двойной рыб</h1>
+                        <div class="item__main">
+                            <img class="item__image" src="./images/images (5).jpg" alt="recipe image">
+                        </div>
+                        <img class="tag__flag" src="./images/flags/est.png" alt="flag icon">
+                        <div class="tag__time">
+                                <img src="./images/recipe__time.png" alt="time icon">
+                                <p class="time__text">8 мин</p>
+                        </div>
+                    </a>
+                </li>
+                
+            </ul>
+            <ul class="recipes__pagination">
+                <li class="pagination__item">1</li>
+                <li class="pagination__item">2</li>
+                <li class="pagination__item">3</li>
+                <li class="pagination__item">4</li>
+                <li class="pagination__item">5</li>
+                <li class="pagination__item">6</li>
+                <li class="pagination__item">7</li>
+                <li class="pagination__item">8</li>
+                <li class="pagination__item">9</li>
+                <li class="pagination__item">10</li>
+                <li class="pagination__item">11</li>
+                <li class="pagination__item">12</li>
+                <li class="pagination__item">13</li>
+                <li class="pagination__item">14</li>
+                <li class="pagination__item">15</li>
+                <li class="pagination__item">16</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="footer container">
+        <div class="footer__header">
+            <a class="footer__logotype">boulette</a>
+            <span class="footer__copyright">2026, Дергунов С.К. | MIT License</span>
+            <hr>
+        </div>
+        <div class="footer__main">
+            <div class="footer__column">
+                <ul class="footer__mail-list">
+                    <li><a href="mailto:fly28dem@gmail.com">fly28dem@gmail.com</a></li>
+                    <li><a href="mailto:mainmail9999@gmail.com">mainmail9999@gmail.com</a></li>
+                    <li><a href="mailto:Coperiron@yandex.com">Coperiron@yandex.com</a></li>
+                </ul>
+                <ul class="footer__number-list">
+                    <li><a href="tel:+7(999)235-67-79">+7(999)235-67-79</a></li>
+                    <li><a href="tel:+7(991) 992-68-50">+7(991)992-68-50</a></li>
+                </ul>
+            </div>
+            <div class="footer__column">
+                <nav>
+                    <ul class="footer__navigation-list">
+                        <li><a href="./index.html">Главная</a></li>
+                        <li><a href="./recipes.html">Рецепты</a></li>
+                        <li><a href="#./journal.html">Журнал</a></li>
+                        <li><a href="#./account.html">Профиль</a></li>
+                    </ul>
+                </nav>
+                <ul class="footer__social-media-list">
+                    <li><a href="https://github.com/fly28dem/boulette">GitHub</a></li>
+                    <li><a href="https://t.me/kanulvletu0">Telegram</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
 </body>
 
 </html>
