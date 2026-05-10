@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>boulette — база рецептов</title>
     <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/recipes.css">
     <link rel="icon" href="./images/favicon.png">
 </head>
 
@@ -115,27 +116,334 @@
         </section>
         <section>
             <!-- Длина списка рецептов -->
-            <span class="recipes__lenght">34 рецепта(-ов) было найдено по данному запросу:</span>
+            <span class="article-count">9 рецепта(-ов) было найдено по данному запросу:</span>
             <!-- Список рецептов -->
-            <ul class="recipes__list">
+            <ul class="article-list">
                 <!-- Карточка рецепта -->
-                <li class="recipes__item">
-                    <a href="#">
-                        <h1 class="item__title">Ватиканские зефирные пряности закатного толка</h1>
-                        <img class="item__image" src="./images/vatican.jpg" alt="recipe image">
-                        <img class="tag__flag" src="./images/flags/vat.png" alt="flag icon">
-                        <div class="tag__time">
-                                <img src="./images/recipe__time.png" alt="time icon">
-                                <p class="time__text">60 мин</p>
+                <li class="article-list__card">
+                    <a class="card__container" href="#">
+                        <img class="card__image" src="./images/burger-image.jpg" alt="article image">
+                        <div class="card__main-content">
+                            <h1 class="card__title">Ароматные бургеры frogy-filling</h1>
+                            <p class="card__description">
+                                Вы не найдёте ничего лучше 
+                                на природе, когда 
+                                закончился ваш поёк. Для
+                                начала вам нужно найти...
+                            </p>
+                            <ul class="card__hashtag-list">
+                                <li class="hashtag-list__item"><img class="hashtag-list__image" src="./images/flags/us.png" alt="flag">US</li>
+                                <li class="hashtag-list__item">Мясо</li>
+                                <li class="hashtag-list__item">Перекус</li>
+                            </ul>
+                            <ul class="card__tag-list">
+                                <li class="tag-list__item-views">
+                                    <img class="item-views__image" src="./images/item-views__image.png" alt="views">
+                                    <span class="item-views__text">20 тыс.</span>
+                                </li>
+                                <li class="tag-list__item-time">
+                                    <span class="item-time__text">1 ч. 20 мин.</span>
+                                    <img src="./images/item-time__image.png" alt="time">
+                                </li>
+                            </ul>
                         </div>
                     </a>
                 </li>
+                <li class="article-list__card">
+                    <a class="card__container" href="#">
+                        <img class="card__image" src="./images/Без названия.jpg" alt="article image">
+                        <div class="card__main-content">
+                            <h1 class="card__title">Кабачки</h1>
+                            <p class="card__description">
+                                Готовятся очень просто, вам всего лишь нужно взять и приготовить.
+                            </p>
+                            <ul class="card__hashtag-list">
+                                <li class="hashtag-list__item"><img class="hashtag-list__image" src="./images/flags/fr.png" alt="flag">FR</li>
+                                <li class="hashtag-list__item">Овощи</li>
+                                <li class="hashtag-list__item">Ужин</li>
+                            </ul>
+                            <ul class="card__tag-list">
+                                <li class="tag-list__item-views">
+                                    <img class="item-views__image" src="./images/item-views__image.png" alt="views">
+                                    <span class="item-views__text">2 тыс.</span>
+                                </li>
+                                <li class="tag-list__item-time">
+                                    <span class="item-time__text">25 мин.</span>
+                                    <img src="./images/item-time__image.png" alt="time">
+                                </li>
+                            </ul>
+                        </div>
+                    </a>
+                </li>
+                <li class="article-list__card">
+                    <a class="card__container" href="#">
+                        <img class="card__image" src="./images/Без названия (1).jpg" alt="article image">
+                        <div class="card__main-content">
+                            <h1 class="card__title">Лиса-овсянка</h1>
+                            <p class="card__description">
+                                Обстрегите лису, покрошите в овсянку, и у вас...
+                            </p>
+                            <ul class="card__hashtag-list">
+                                <li class="hashtag-list__item"><img class="hashtag-list__image" src="./images/flags/no.png" alt="flag">NO</li>
+                                <li class="hashtag-list__item">Сладкое</li>
+                                <li class="hashtag-list__item">Завтрак</li>
+                            </ul>
+                            <ul class="card__tag-list">
+                                <li class="tag-list__item-views">
+                                    <img class="item-views__image" src="./images/item-views__image.png" alt="views">
+                                    <span class="item-views__text">101 тыс.</span>
+                                </li>
+                                <li class="tag-list__item-time">
+                                    <span class="item-time__text">35 мин.</span>
+                                    <img src="./images/item-time__image.png" alt="time">
+                                </li>
+                            </ul>
+                        </div>
+                    </a>
+                </li>
+                <li class="article-list__card">
+                    <a class="card__container" href="#">
+                        <img class="card__image" src="./images/Без названия (2).jpg" alt="article image">
+                        <div class="card__main-content">
+                            <h1 class="card__title">Картошка с нейро-рыбой</h1>
+                            <p class="card__description">
+                                Чтоб сделать, нужно только да и только...
+                            </p>
+                            <ul class="card__hashtag-list">
+                                <li class="hashtag-list__item"><img class="hashtag-list__image" src="./images/flags/in.png" alt="flag">IN</li>
+                                <li class="hashtag-list__item">Рыба</li>
+                                <li class="hashtag-list__item">Обед</li>
+                            </ul>
+                            <ul class="card__tag-list">
+                                <li class="tag-list__item-views">
+                                    <img class="item-views__image" src="./images/item-views__image.png" alt="views">
+                                    <span class="item-views__text">711</span>
+                                </li>
+                                <li class="tag-list__item-time">
+                                    <span class="item-time__text">35 мин.</span>
+                                    <img src="./images/item-time__image.png" alt="time">
+                                </li>
+                            </ul>
+                        </div>
+                    </a>
+                </li>
+                <li class="article-list__card">
+                    <a class="card__container" href="#">
+                        <img class="card__image" src="./images/Без названия (3).jpg" alt="article image">
+                        <div class="card__main-content">
+                            <h1 class="card__title">Пицца на сковороде</h1>
+                            <p class="card__description">
+                                Не хочется мыть сковородку после завтрака?
+                            </p>
+                            <ul class="card__hashtag-list">
+                                <li class="hashtag-list__item"><img class="hashtag-list__image" src="./images/flags/it.png" alt="flag">IT</li>
+                                <li class="hashtag-list__item">Выпечка</li>
+                                <li class="hashtag-list__item">Ужин</li>
+                            </ul>
+                            <ul class="card__tag-list">
+                                <li class="tag-list__item-views">
+                                    <img class="item-views__image" src="./images/item-views__image.png" alt="views">
+                                    <span class="item-views__text">344 тыс.</span>
+                                </li>
+                                <li class="tag-list__item-time">
+                                    <span class="item-time__text">1 ч.</span>
+                                    <img src="./images/item-time__image.png" alt="time">
+                                </li>
+                            </ul>
+                        </div>
+                    </a>
+                </li>
+                <li class="article-list__card">
+                    <a class="card__container" href="#">
+                        <img class="card__image" src="./images/Без названия (4).jpg" alt="article image">
+                        <div class="card__main-content">
+                            <h1 class="card__title">Самса из чайки</h1>
+                            <p class="card__description">
+                                Список небольшой:
+                                1) Наловите ведро птиц...
+                            </p>
+                            <ul class="card__hashtag-list">
+                                <li class="hashtag-list__item"><img class="hashtag-list__image" src="./images/flags/br.png" alt="flag">BR</li>
+                                <li class="hashtag-list__item">Птица</li>
+                                <li class="hashtag-list__item">Сытное</li>
+                            </ul>
+                            <ul class="card__tag-list">
+                                <li class="tag-list__item-views">
+                                    <img class="item-views__image" src="./images/item-views__image.png" alt="views">
+                                    <span class="item-views__text">95тыс.</span>
+                                </li>
+                                <li class="tag-list__item-time">
+                                    <span class="item-time__text">2 ч. 20 мин.</span>
+                                    <img src="./images/item-time__image.png" alt="time">
+                                </li>
+                            </ul>
+                        </div>
+                    </a>
+                </li>
+                <li class="article-list__card">
+                    <a class="card__container" href="#">
+                        <img class="card__image" src="./images/images (2).jpg" alt="article image">
+                        <div class="card__main-content">
+                            <h1 class="card__title">Армия пельменей</h1>
+                            <p class="card__description">
+                                Сколько вы можете съесть за раз? Можете не...
+                            </p>
+                            <ul class="card__hashtag-list">
+                                <li class="hashtag-list__item"><img class="hashtag-list__image" src="./images/flags/ru.png" alt="flag">RU</li>
+                                <li class="hashtag-list__item">Популярно</li>
+                                <li class="hashtag-list__item">Ужин</li>
+                            </ul>
+                            <ul class="card__tag-list">
+                                <li class="tag-list__item-views">
+                                    <img class="item-views__image" src="./images/item-views__image.png" alt="views">
+                                    <span class="item-views__text">1,3 млн.</span>
+                                </li>
+                                <li class="tag-list__item-time">
+                                    <span class="item-time__text">3 ч. 30 мин.</span>
+                                    <img src="./images/item-time__image.png" alt="time">
+                                </li>
+                            </ul>
+                        </div>
+                    </a>
+                </li>
+                <li class="article-list__card">
+                    <a class="card__container" href="#">
+                        <img class="card__image" src="./images/images.jpg" alt="article image">
+                        <div class="card__main-content">
+                            <h1 class="card__title">Рыба-капитан</h1>
+                            <p class="card__description">
+                                Когда в последний раз вы играли в русскую рыбалку?
+                            </p>
+                            <ul class="card__hashtag-list">
+                                <li class="hashtag-list__item"><img class="hashtag-list__image" src="./images/flags/ru.png" alt="flag">RU</li>
+                                <li class="hashtag-list__item">Жарка</li>
+                                <li class="hashtag-list__item">Рыбалка</li>
+                            </ul>
+                            <ul class="card__tag-list">
+                                <li class="tag-list__item-views">
+                                    <img class="item-views__image" src="./images/item-views__image.png" alt="views">
+                                    <span class="item-views__text">34 тыс.</span>
+                                </li>
+                                <li class="tag-list__item-time">
+                                    <span class="item-time__text">60 мин.</span>
+                                    <img src="./images/item-time__image.png" alt="time">
+                                </li>
+                            </ul>
+                        </div>
+                    </a>
+                </li>
+                <li class="article-list__card">
+                    <a class="card__container" href="#">
+                        <img class="card__image" src="./images/images (1).jpg" alt="article image">
+                        <div class="card__main-content">
+                            <h1 class="card__title">Дети котлет</h1>
+                            <p class="card__description">
+                                Любите ягнят? Я нет, но для тех кто любит, мы подготовили...
+                            </p>
+                            <ul class="card__hashtag-list">
+                                <li class="hashtag-list__item"><img class="hashtag-list__image" src="./images/flags/us.png" alt="flag">US</li>
+                                <li class="hashtag-list__item">Мясо</li>
+                                <li class="hashtag-list__item">Креатив</li>
+                            </ul>
+                            <ul class="card__tag-list">
+                                <li class="tag-list__item-views">
+                                    <img class="item-views__image" src="./images/item-views__image.png" alt="views">
+                                    <span class="item-views__text">993 тыс.</span>
+                                </li>
+                                <li class="tag-list__item-time">
+                                    <span class="item-time__text">40 мин.</span>
+                                    <img src="./images/item-time__image.png" alt="time">
+                                </li>
+                            </ul>
+                        </div>
+                    </a>
+                </li>
+                 
+                <!---
+                <li class="article-list__card">
+                    <a class="card__container" href="#">
+                        <img class="card__image" src="./images/images (3).jpg" alt="article image">
+                        <div class="card__main-content">
+                            <h1 class="card__title">Салат "Два яйца"</h1>
+                            <p class="card__description">
+                                Не знаете что делать с яйцами в холодильнике? :P
+                            </p>
+                            <ul class="card__hashtag-list">
+                                <li class="hashtag-list__item"><img class="hashtag-list__image" src="./images/flags/lt.png" alt="flag">LT</li>
+                                <li class="hashtag-list__item">Салат</li>
+                                <li class="hashtag-list__item">Завтрак</li>
+                            </ul>
+                            <ul class="card__tag-list">
+                                <li class="tag-list__item-views">
+                                    <img class="item-views__image" src="./images/item-views__image.png" alt="views">
+                                    <span class="item-views__text">20 тыс.</span>
+                                </li>
+                                <li class="tag-list__item-time">
+                                    <span class="item-time__text">15 мин.</span>
+                                    <img src="./images/item-time__image.png" alt="time">
+                                </li>
+                            </ul>
+                        </div>
+                    </a>
+                </li>
+                <li class="article-list__card">
+                    <a class="card__container" href="#">
+                        <img class="card__image" src="./images/images (4).jpg" alt="article image">
+                        <div class="card__main-content">
+                            <h1 class="card__title">Рыцарская похлебка</h1>
+                            <p class="card__description">
+                                16 перцев выросло на огороде, Милорд!
+                            </p>
+                            <ul class="card__hashtag-list">
+                                <li class="hashtag-list__item"><img class="hashtag-list__image" src="./images/flags/se.png" alt="flag">SE</li>
+                                <li class="hashtag-list__item">Суп</li>
+                                <li class="hashtag-list__item">Обед</li>
+                            </ul>
+                            <ul class="card__tag-list">
+                                <li class="tag-list__item-views">
+                                    <img class="item-views__image" src="./images/item-views__image.png" alt="views">
+                                    <span class="item-views__text">20 тыс.</span>
+                                </li>
+                                <li class="tag-list__item-time">
+                                    <span class="item-time__text">20 мин.</span>
+                                    <img src="./images/item-time__image.png" alt="time">
+                                </li>
+                            </ul>
+                        </div>
+                    </a>
+                </li> -->
+                <!-- <li class="article-list__card">
+                    <a class="card__container" href="#">
+                        <img class="card__image" src="./images/images (5).jpg" alt="article image">
+                        <div class="card__main-content">
+                            <h1 class="card__title">Двойной рыб</h1>
+                            <p class="card__description">
+                                Рыба-капитан уже надоела? Или вы её недоели? Вам поможет двойной рыб!
+                            </p>
+                            <ul class="card__hashtag-list">
+                                <li class="hashtag-list__item"><img class="hashtag-list__image" src="./images/flags/ee.png" alt="flag">EE</li>
+                                <li class="hashtag-list__item">Рыба</li>
+                                <li class="hashtag-list__item">Ужин</li>
+                            </ul>
+                            <ul class="card__tag-list">
+                                <li class="tag-list__item-views">
+                                    <img class="item-views__image" src="./images/item-views__image.png" alt="views">
+                                    <span class="item-views__text">20 тыс.</span>
+                                </li>
+                                <li class="tag-list__item-time">
+                                    <span class="item-time__text">8 мин.</span>
+                                    <img src="./images/item-time__image.png" alt="time">
+                                </li> -->
+            </ul>
+        </div>
+    </a>
+</li>
                 <!-- Карточка рецепта -->
-                <li class="recipes__item">
+                <!-- <li class="recipes__item">
                     <a href="#">
                         <h1 class="item__title">Дети котлет</h1>
                         <div class="item__main">
-                            <img class="item__image" src="./images/images (1).jpg" alt="recipe image">
+                            <img class="item__image" src="" alt="recipe image">
                         </div>
                         <img class="tag__flag" src="./images/flags/recipes__flag.png" alt="flag icon">
                         <div class="tag__time">
@@ -143,9 +451,9 @@
                                 <p class="time__text">40 мин</p>
                         </div>
                     </a>
-                </li>
+                </li> -->
                 <!-- Карточка рецепта -->
-                <li class="recipes__item">
+                <!-- <li class="recipes__item">
                     <a href="#">
                         <h1 class="item__title">Картошка с нейро-рыбой</h1>
                         <div class="item__main">
@@ -157,9 +465,9 @@
                                 <p class="time__text">40 мин</p>
                         </div>
                     </a>
-                </li>
+                </li> -->
                 <!-- Карточка рецепта -->
-                <li class="recipes__item">
+                <!-- <li class="recipes__item">
                     <a href="#">
                         <h1 class="item__title">Лиса-овсянка</h1>
                         <div class="item__main">
@@ -171,9 +479,9 @@
                                 <p class="time__text">5 мин</p>
                         </div>
                     </a>
-                </li>
+                </li> -->
                 <!-- Карточка рецепта -->
-                <li class="recipes__item">
+                <!-- <li class="recipes__item">
                     <a href="#">
                         <h1 class="item__title">Самса из чайки</h1>
                         <div class="item__main">
@@ -276,7 +584,7 @@
                                 <p class="time__text">8 мин</p>
                         </div>
                     </a>
-                </li>
+                </li> -->
                 
             </ul>
             <ul class="recipes__pagination">

@@ -1,0 +1,223 @@
+/* ----------------------------- */
+/* ---------- Лендинг ---------- */
+/* ----------------------------- */
+
+.landing__container {
+    margin-top: 70px;
+}
+
+/* Большой текст и изображение */
+
+.landing__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.landing__header h1 {
+    font-family: 'FindSansProBold';
+    font-size: 48pt;
+    text-transform: uppercase;
+    line-height: 42pt;
+}
+
+.landing__header h1:last-of-type {
+    color: #1436a7;
+}
+
+.landing__main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 1px dashed rgba(206, 206, 9, 0.5); */
+}
+
+.landing__image {
+    margin: 60px;
+}
+
+/* Боковые меню */
+
+.landing__list {
+    position: absolute;
+    font-size: 14pt;
+    font-family: 'FindSansProLight';
+}
+
+.landing__list a:hover {
+    text-decoration: underline;
+}
+
+.left-top {
+    left: 0px;
+    top: 0px;
+}
+
+.left-bottom {
+    left: 0px;
+    bottom: 0px;
+}
+
+.right-top {
+    text-align: right;
+    right: 0px;
+    top: 0px;
+}
+
+.right-bottom {
+    text-align: right;
+    right: 0px;
+    bottom: 0px;
+}
+
+.blue a {
+    color: #1436a7;
+}
+
+/* Переход к полосе прокрутки */
+
+.landing__transition {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 160px;
+    background-image: url(../images/landing__background.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.transition__title {
+    font-size: 18pt;
+    font-family: 'FindSansProLight';
+    font-weight: lighter;
+}
+
+.transition__text {
+    margin-top: 35px;
+    text-align: center;
+    font-size: 14pt;
+}
+
+/* ----------------------------- */
+/* ----- Авторские рецепты ----- */
+/* ----------------------------- */
+
+/* Секция и список */
+
+.landing__original-recipes {
+    margin-top: 5px;
+    /* border: 1px dashed blue; */
+}
+
+.original-recipes__title {
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 18pt;
+    font-family: 'FindSansProRegular';
+    font-weight: normal;
+    color: #142861;
+}
+
+/* Настройка слайдера */
+
+.original-recipes__container {
+    height: 220px;
+    display: flex;
+    overflow-y: visible;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    /* border: 1px dashed rgba(241, 241, 5, 0.3); */
+}
+
+.original-recipes__container::-webkit-scrollbar {
+    display: none;
+}
+
+.original-recipes__slider {
+    display: flex;
+    align-items: center;
+    /* border: 1px dashed rgba(212, 0, 219, 0.3); */
+}
+
+/* Элемент списка */
+
+.original-recipes__item {
+    margin: 0 5px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 388px;
+    height: 200px;
+    border: 1px solid #142861;
+    border-radius: 8px;
+    scroll-snap-align: start;
+    scroll-margin: 0 5px;
+}
+
+.original-recipes__item a {
+    width: 378px;
+    height: 190px;
+    padding: 5px;
+    background-color: rgba(12, 28, 72, 0.15);
+}
+
+/* Настройка карточки */
+
+.item__title {
+    font-family: 'FindSansProRegular';
+    font-weight: normal;
+}
+
+.item__main-container {
+    margin: 10px 5px;
+    display: flex;
+    /* gap: 10px; */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item__image {
+    max-width: 135px;
+    max-height: 120px;
+    margin: 5px 10px;
+}
+
+.item__description {
+    font-family: 'FindSansProLight';
+    font-size: 8pt;
+    color: #c9c9c9;
+}
+
+.item__additional-text {
+    position: absolute;
+    font-family: 'FindSansProRegular';
+    font-size: 10pt;
+    color: #142861;
+}
+
+.right {
+    right: 5px;
+    bottom: 5px;
+}
+
+.left {
+    left: 5px;
+    bottom: 5px;
+}
+
+/* Анимация при наведении */
+
+.original-recipes__item:hover {
+    z-index: 1;
+    cursor: pointer;
+    backdrop-filter: blur(3px);
+    /* transform: scale(110%); */
+    border-color: #1436a7;
+    transition: 0.2s;
+}
+
+.original-recipes__item {
+    transition: 0.2s;
+}
