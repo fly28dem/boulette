@@ -1,0 +1,63 @@
+/* ----------------------------- */
+/* ----- Шапка и навигация ----- */
+/* ----------------------------- */
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    font-family: 'FindSansProBold';
+    border-radius: 0 0 8px 8px;
+    /* background-color: rgba(31, 36, 48, 0.3); */
+    backdrop-filter: blur(15px);
+}
+
+.header__navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Логотип, ссылки на страницы и авторизация */
+
+.logotype {
+    font-size: 36pt;
+}
+
+.navigation__list {
+    display: flex;
+    gap: 60px;
+}
+
+.navigation__list li{
+    font-size: 22.5pt;
+    color: #314ca1;
+}
+
+.login__container a {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    color: rgb(197, 197, 197);
+}
+
+.login__image {
+    height: 48px;
+}
+
+.login__text {
+    font-size: 27pt;
+    color: gainsboro;
+}
+
+/* Анимация при наведении*/
+
+.navigation__list a:hover {
+    filter: brightness(120%);
+    cursor: pointer;
+}
+
+.login__container a:hover {
+    filter: brightness(80%);
+    cursor: pointer;
+}

@@ -1,0 +1,134 @@
+/* Карточка рецепта */
+
+.article-list__card {
+    width: 510px;
+    height: 234px;
+    margin: 7px;
+    backdrop-filter: blur(11px);
+    border-radius: 8px;
+}
+
+.card__container {
+    display: flex;
+    flex-direction: row;
+    gap: 11px;
+    padding: 13px 11px;
+    height: 100%;
+}
+
+/* -------------------------------- */
+/* ------ Структура карточки ------ */
+/* -------------------------------- */
+
+.card__image {
+    width: 241px;
+    height: 207px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.card__main-content {
+    display: grid;
+    gap: 19px;
+}
+
+.card__title {
+    margin-top: 3px;
+    font-family: 'FindSansProRegular';
+    font-weight: normal;
+    font-size: 14pt;
+}
+
+.card__description {
+    font-size: 10pt;
+    color: #afafaf;
+}
+
+/* Хэштеги (От пользователя) */
+
+.card__hashtag-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    gap: 11px;
+}
+
+.hashtag-list__item {
+    display: flex;
+    justify-content: space-around;
+    gap: 3px;
+    align-items: center;
+    height: 22px;
+    padding: 0 5px;
+    font-size: 10pt;
+    border-radius: 8px;
+    background-color: #424a62;
+}
+
+.hashtag-list__image {
+    width: 18px;
+}
+
+/* Теги (просмотры и время готовки) */
+
+.card__tag-list {
+    display: flex;
+    justify-content: space-between;
+    font-size: 10pt;
+}
+
+.tag-list__item-views, .tag-list__item-time {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.item-views__text {
+    color: #afafaf;
+}
+
+.item-views__image {
+    height: 14px;
+}
+
+/* -------------------------------- */
+/* ------- Цвета и анимации ------- */
+/* -------------------------------- */
+
+/* Вертикальных колонки списка */
+
+/* для 1-й */
+.article-list__card:nth-child(n+1) {
+    background-color: rgba(58, 65, 81, 0.2);
+}
+.article-list__card:nth-child(n+1):hover {
+    background-color: rgba(58, 65, 81, 0.4);
+}
+
+/* для 2-й */
+.article-list__card:nth-child(3n-1) {
+    background-color: rgba(48, 57, 81, 0.3);
+}
+.article-list__card:nth-child(3n-1):hover {
+    background-color: rgba(48, 57, 81, 0.5);
+}
+
+/* для 3-й */
+.article-list__card:nth-child(3n) {
+    background-color: rgba(29, 39, 56, 0.5);;
+}
+.article-list__card:nth-child(3n):hover {
+    background-color: rgba(29, 39, 56, 0.7);
+}
+
+/* Анимации при наведении */
+.article-list__card {
+    transition-duration: 0.2s;
+}
+
+.article-list__card:hover {
+    cursor: pointer;
+    z-index: 1;
+    transform: scale(107%);
+    transition-duration: 0.2s;
+}

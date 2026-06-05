@@ -1,0 +1,38 @@
+/* -------------------------------- */
+/* ----- Страница с рецептами ----- */
+/* -------------------------------- */
+
+.recipes__container {
+    margin-top: 27px;
+}
+
+/* -------------------------------- */
+/* ----------- Пагинация ---------- */
+/* -------------------------------- */
+
+.recipes__pagination {
+    display: flex;
+    justify-content: center;
+    gap: 19px;
+    margin-top: 25px;
+}
+
+.pagination__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 47px;
+    height: 35px;
+    font-family: 'FindSansProLight';
+    font-size: 10pt;
+    color: #677298;
+    border: 1px solid #677298;
+    border-radius: 8px;
+}
+
+.pagination__item:hover {
+    cursor: pointer;
+    background-color: #677298;
+    color: #eee;
+    transition-delay: 30ms;
+}

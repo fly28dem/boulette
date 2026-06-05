@@ -1,0 +1,112 @@
+/* Отключение видимости полей чекбоксов и радиокнопок */
+
+.recipes__form label > input {
+    display: none;
+}
+
+/* -------------------------------- */
+/* ---------- Форма ввода --------- */
+/* -------------------------------- */
+
+.form__title {
+    text-align: center;
+    font-family: 'FindSansProLight';
+    font-size: 36pt;
+}
+
+/* Кнопки сортировки */
+
+.form__sorting-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 47px;
+}
+
+.form__sorting-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 50px;
+    font-family: 'FindSansProLight';
+    font-size: 14pt;
+    color: #eee;
+    border: 1px solid #eee;
+    border-radius: 8px;
+}
+
+.form__sorting-button:hover {
+    cursor: pointer;
+    color: #050505;
+    background-color:#eee;
+    transition-delay: 50ms;
+}
+
+/* Поиск */
+
+.form__search-input {
+    width: 900px;
+    height: 50px;
+    padding: 15px;
+    font-family: 'FindSansProLight';
+    font-size: 14pt;
+    color: #eee;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    background: transparent;
+}
+
+.form__search-button {
+    width: 70px;
+    height: 50px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    background: url(../images/search-button__background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.form__search-input:focus {
+    outline: 0;
+    caret-color: #eee;
+}
+
+.form__search-input::placeholder {
+    color: #afafaf;
+}
+
+.form__search-button:hover {
+    cursor: pointer;
+    background: url(../images/search-button__background_hover.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color:#eee;
+    transition-delay: 50ms;
+}
+
+/* Кнопки категорий */
+
+.form__category-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 21px;
+}
+
+.form__category-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 115px;
+    height: 33px;
+    font-size: 10pt;
+    color: #314ca1;
+    border: 1px #314ca1 solid;
+    border-radius: 8px;
+}
+
+.form__category-button:hover {
+    cursor: pointer;
+    color: #eee;
+    background-color:#314ca1;
+    transition-delay: 30ms;
+}
