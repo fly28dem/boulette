@@ -1,4 +1,5 @@
 import s from './Footer.module.css';
+import { Link } from 'react-router';
 
 function Footer() {
   return (
@@ -23,10 +24,10 @@ function Footer() {
             <div className={s['footer__column']}>
                 <nav>
                     <ul className={s['footer__navigation-list']}>
-                        <li><a href='./index.html'>Главная</a></li>
-                        <li><a href='./recipes.html'>Рецепты</a></li>
-                        <li><a href='#./journal.html'>Журнал</a></li>
-                        <li><a href='#./account.html'>Профиль</a></li>
+                        <li><Link to="/"><li>Главная</li></Link></li>
+                        <li><Link to="/recipes"><li>Рецепты</li></Link></li>
+                        <li><Link to="/"><li>Журнал</li></Link></li>
+                        <li><Link to="/"><li>Профиль</li></Link></li>
                     </ul>
                 </nav>
                 <ul className={s['footer__social-media-list']}>

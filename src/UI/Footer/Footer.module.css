@@ -52,6 +52,11 @@
     color: #afafaf;
 }
 
+.footer__main li {
+    font-size: 10pt;
+    color: #afafaf;
+}
+
 .footer__column {
     display: flex; 
     flex-direction: column;

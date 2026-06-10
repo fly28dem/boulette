@@ -55,5 +55,3 @@ function RecipeCard({card}) {
 }
 
 export default RecipeCard;
-
-

@@ -1,9 +1,15 @@
-import s from "../pages/Main/Main.module.css"
-import coctaileImage from "../images/coctaile_forcard.png"
-import aimantImage from "../images/aimant_forcard.png"
-import bouletteavesnesImage from "../images/bouletteavesnes_forcard.png"
-import mushroomsImage from "../images/mushroom_forcard.png"
-import OriginalRecipeCard from "../OriginalRecipeCard/OriginalRecipeCard"
+// имфорт изображений
+import coctaileImage from "../images/coctaile_forcard.png";
+import aimantImage from "../images/aimant_forcard.png";
+import bouletteavesnesImage from "../images/bouletteavesnes_forcard.png";
+import mushroomsImage from "../images/mushroom_forcard.png";
+import originalRecipeChkmeruli from "../images/originalRecipe__chkmerulli.png";
+import originalRecipeKarpacho from "../images/originalRecipe__karpacho.png";
+import originalRecipeUstrici from "../images/originalRecipe__ustrici.png";
+import originalRecipeChai from "../images/originalRecipe__chai.png";
+
+import s from "../pages/Main/Main.module.css";
+import OriginalRecipeCard from "../OriginalRecipeCard/OriginalRecipeCard";
 import { useEffect } from "react";
 
 function Slider({ ...props }) {
@@ -44,7 +50,7 @@ function Slider({ ...props }) {
         {
             id: 5,
             title: 'Цыпленок «Чкмерули»',
-            image: coctaileImage,
+            image: originalRecipeChkmeruli,
             description: "Традиционное блюдо грузинской кухни, представляющее собой сочного жареного цыпленка, запеченного в насыщенном сливочно-чесночном соусе. Родом оно из горного региона Рача (село Чкмера), славится невероятным ароматом и ярким вкусом.",
             time: 0,
             type: "Освновное блюдо"
@@ -52,7 +58,7 @@ function Slider({ ...props }) {
         {
             id: 6,
             title: 'Карпаччо',
-            image: aimantImage,
+            image: originalRecipeKarpacho,
             description: 'Изысканная итальянская холодная закуска, представляющая тончайшие, прозрачные ломтики сырой говядины. Блюдо подается не подвергаясь термической обработке, и ценится за мягкую текстуру, которая тает во рту.',
             time: 0,
             type: "Закуски"
@@ -60,50 +66,18 @@ function Slider({ ...props }) {
         {
             id: 7,
             title: 'Устрицы с лимонным соком',
-            image: bouletteavesnesImage,
+            image: originalRecipeUstrici,
             description: "Классическое, изысканное блюдо средиземноморской и французской кухни из живых моллюсков, подаваемых на льду, и сочных долек лимона. Это эталонная закуска, ценящаяся за деликатный вкус моря, свежесть и утонченную простоту.",
-            time: 0,
-            type: "Закуски"
-        },
-        {
-            id: 8,
-            title: 'Смузи-боул «Голубь»',
-            image: mushroomsImage,
-            description: "Густой, питательный и красивый десерт-завтрак, который состоит из двух частей: ягодной основы, взбитой до кремовой текстуры, и аппетитных топпингов, которые добавляют приятный контраст текстур.",
             time: 0,
             type: "Закуски"
         },
         {
             id: 9,
             title: 'Айс матча латте',
-            image: mushroomsImage,
+            image: originalRecipeChai,
             description: "Утонченный прохладительный напиток, рожденный на стыке многовековых японских традиций и современной кофейной культуры. В его основе лежит церемониальный зеленый чай маття.",
             time: 0,
             type: "Напитки"
-        },
-        {
-            id: 10,
-            title: 'Сердце Самурая',
-            image: mushroomsImage,
-            description: "В основе этого шедевра лежит изысканная философия японского минимализма, переосмысленная через призму высокой кухни. Главный герой блюда — филе премиального тихоокеанского тунца.",
-            time: 0,
-            type: "Основное блюдо"
-        },
-        {
-            id: 11,
-            title: 'Хрустящие баклажаны',
-            image: mushroomsImage,
-            description: "Ресторанный хит, представляющий собой идеальный баланс текстур и вкусов. В нем сочетаются горячая, хрустящая корочка овощей, сладость свежих томатов, нежность сливочного сыра и пикантная азиатская заправка.",
-            time: 0,
-            type: "Салаты"
-        },
-        {
-            id: 12,
-            title: 'Мидии в сливочном соусе',
-            image: mushroomsImage,
-            description: "Изысканное, но при этом простое в приготовлении блюдо средиземноморской кухни. Оно представляет собой нежные морские моллюски, тушеные в густой, бархатистой сливочно-чесночной подливке с добавлением зелени и специй.",
-            time: 0,
-            type: "Закуски"
         },
         
     ]

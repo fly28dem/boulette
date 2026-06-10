@@ -1,15 +1,24 @@
 import { useState } from "react";
 import s from "./RecipesForm.module.css";
+import Sort from "../UI/Sort/Sort";
 
-function RecipeForm() {
+function RecipeForm({...props}) {
 
-    const [value, setValue] = useState('defaultValue');
+    const [selectedSort, setSelectedSort] = useState('')
+    let recipeList = props.recipeCards
 
-    function handleClick(e) {
-        console.log('click')
-        console.log(value)
-        setValue(e.target.value)
-        console.log(value)
+    const sortRecipes = (sort) => {
+        setSelectedSort(sort);
+        if (sort == 'views') {
+            props.setRecipeCards([...props.recipeCards.sort((a, b) => b[sort] - a[sort])])
+        }
+        else if (sort == 'date') {
+            props.setRecipeCards([...props.recipeCards.sort((a, b) => b[sort] - a[sort])])
+        }
+        else if (sort == 'random') {
+            props.setRecipeCards([...props.recipeCards.sort(() => Math.random() - 0.5)])
+        }
+        
     }
 
     return (
@@ -18,18 +27,15 @@ function RecipeForm() {
                 <legend className={s["form__title"]}>Открытая база рецептов</legend>
                 <div className={s["form__sorting-container"]}>
                     {/* <!-- Сортировка --> */}
-                    <label className={s["form__sorting-button"]} htmlFor="sort">
-                        Популярные
-                        <input onClick={(e) => handleClick(e)} type="radio" id="sort" name="recipes__sorting" value="popular" />
-                    </label>
-                    <label className={s["form__sorting-button"]} htmlFor="sort">
-                        Новинки
-                        <input onClick={(e) => handleClick(e)} type="radio" id="sort" name="recipes__sorting" value="news" />
-                    </label>
-                    <label className={s["form__sorting-button"]} htmlFor="sort">
-                        Случайные
-                        <input onClick={(e) => handleClick(e)} type="radio" id="sort" name="recipes__sorting" value="random" />
-                    </label>
+                    <Sort
+                        value={selectedSort}
+                        onClick={sortRecipes}
+                        options={[
+                            {value: 'views', name: 'Популярные'},
+                            {value: 'date', name: 'Новинки'},
+                            {value: 'random', name: 'Случайные'},
+                        ]}
+                    />
 
                     {/* <!-- Поисковая строка --> */}
                     <input className={s["form__search-input"]} type="text" placeholder="Заячьи уши в духовке по-мексикански" />
