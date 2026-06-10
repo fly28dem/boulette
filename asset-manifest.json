@@ -1,8 +1,12 @@
 {
   "files": {
-    "main.css": "/boulette/static/css/main.6ba01d8d.css",
-    "main.js": "/boulette/static/js/main.9737fab9.js",
+    "main.css": "/boulette/static/css/main.912ea976.css",
+    "main.js": "/boulette/static/js/main.9179ede5.js",
+    "static/media/originalRecipe__karpacho.png": "/boulette/static/media/originalRecipe__karpacho.cab4a987e776a63a09bb.png",
+    "static/media/originalRecipe__ustrici.png": "/boulette/static/media/originalRecipe__ustrici.1ce3341e0cc7ce4f165f.png",
+    "static/media/originalRecipe__chkmerulli.png": "/boulette/static/media/originalRecipe__chkmerulli.e455f4cc1c5c2de7c020.png",
     "static/media/coctaile_forcard.png": "/boulette/static/media/coctaile_forcard.8615e408622750858ea5.png",
+    "static/media/originalRecipe__chai.png": "/boulette/static/media/originalRecipe__chai.40dbf5341feb6eeec448.png",
     "static/media/mushroom_forcard.png": "/boulette/static/media/mushroom_forcard.0ad942484349a35ba30c.png",
     "static/media/FindSansProBold.ttf": "/boulette/static/media/FindSansProBold.8bc5320ec4726118a1f8.ttf",
     "static/media/FindSansProLight.ttf": "/boulette/static/media/FindSansProLight.8cc355f3654773945bb3.ttf",
@@ -35,11 +39,11 @@
     "static/media/images (4).jpg": "/boulette/static/media/images (4).ad2c58228eb22036d412.jpg",
     "static/media/images (2).jpg": "/boulette/static/media/images (2).da8ff96dfe201db85790.jpg",
     "index.html": "/boulette/index.html",
-    "main.6ba01d8d.css.map": "/boulette/static/css/main.6ba01d8d.css.map",
-    "main.9737fab9.js.map": "/boulette/static/js/main.9737fab9.js.map"
+    "main.912ea976.css.map": "/boulette/static/css/main.912ea976.css.map",
+    "main.9179ede5.js.map": "/boulette/static/js/main.9179ede5.js.map"
   },
   "entrypoints": [
-    "static/css/main.6ba01d8d.css",
-    "static/js/main.9737fab9.js"
+    "static/css/main.912ea976.css",
+    "static/js/main.9179ede5.js"
   ]
 }
